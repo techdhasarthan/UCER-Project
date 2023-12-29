@@ -20,12 +20,68 @@ body {
 .topnav a.active {
   color: black;
 }
+.ucer img{
+  height: 100px;
+  width:100%;
+
+}
+
+.head a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 4px 4px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.head{
+  overflow: hidden;
+  background-image:linear-gradient(to right, rgb(32, 133, 255) , rgb(157, 255, 219));
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.right{
+  padding-left: 20px;
+}
+
+.left{
+ 
+  padding-right: 10px;
+}
+
+.center{
+  justify-self: right;
+}
+  
+
+.main { 
+  text-align: center; 
+  height: 25px;
+} 
+
+.marq { 
+  padding-top: 1px; 
+  padding-bottom: 1px; 
+  font-size: 15px; 
+  font-weight: bold; 
+  color: blue; 
+  
+} 
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+  .ucer img{
+    height: 2cm;
   }
 }
 
@@ -35,7 +91,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-  }
+  /* }
   /* .topnav.responsive a {
     float: none;
     display: block;
@@ -57,3 +113,8 @@ body {
   color: blue; 
   
 } 
+.ucer img{
+  height: 2cm;
+  width: 600px;
+}
+}
