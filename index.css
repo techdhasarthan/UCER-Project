@@ -43,3 +43,17 @@ body {
   }
 } */
 }
+
+.main { 
+  text-align: center; 
+
+} 
+
+.marq { 
+  padding-top: 1px; 
+  padding-bottom: 1px; 
+  font-size: 15px; 
+  font-weight: bold; 
+  color: blue; 
+  
+} 
