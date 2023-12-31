@@ -3,22 +3,58 @@
 
 <head>
   <title>UCER - University College of Engineering, Ramanathapuram</title>
+  <link rel="shortcut icon" href="./images/annauniv_logo.png" type="image/x-icon">
   <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="./stylesheets/index.css">
 </head>
 
 <body>
+  <!-- topbar section starts -->
   <div class="head">
-    <a href="#" class="left">counselling</a>
-    <a href="#" class="center">hostel fees</a>
-    <a href="#" class="right">semester fees</a>
+    <div class="row">
+      <div class="col-sm-5 counsiling-info">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mortarboard"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+          <path
+            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+        </svg>
+        Counselling Code: 5017
+      </div>
+      <div class="col-sm-7 top-feesinfo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+          class="bi bi-credit-card creditcard" viewBox="0 0 16 16">
+          <path
+            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+          <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+        </svg>
+        <a href="https://www.iobnet.co.in/iobpay/entry.do" class="payment" target="_blank">UCER Hostel Fee Payment</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+        </svg>
+        <a href="https://www.aukdc.edu.in/onlinefee/gotoAgree.htm" class="semester-pay" target="_blank">Semester Fee
+          Payment</a>
+      </div>
+    </div>
   </div>
+  <!-- topbar section ends -->
 
-  <div class="ucer">
-    <img src="./images/university.png" alt="university picture">
+  <!-- image banner section starts -->
+  <div class="row">
+    <div class="col-md-8">
+      <img src="images/college_logo.svg" alt="college logo" class="college-img-banner">
+    </div>
+    <div class="col-md-4">
+      <img src="images/independence.svg" alt="75th Independence day logo" class="college-img-banner">
+    </div>
   </div>
+  <!-- image banner section ends -->
 
+  <!-- navbar section starts -->
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#Administration">Administration</a>
@@ -33,13 +69,20 @@
     <a href="#Grievances">Grievances</a>
     <a href="#Contact">Contact</a>
   </div>
-  <div class="main">
-    <marquee class="marq" bgcolor="Green" direction="left" loop="">
-      <div class="marq">
-        The information will be released!!
-      </div>
-    </marquee>
+  <!-- navbar section ends -->
+
+  <!-- Announcements section starts -->
+  <div class="row announcements">
+    <div class="col-sm-2">
+      <h5 class="announcement-head">Announcements</h5>
+    </div>
+    <div class="col-sm-10">
+      <marquee behavior="scroll" direction="left" scrollamount="4" class="annonce-scroll" onmouseover="this.stop()" onmouseout="this.start()">
+        <a href="#" class="annonce-source"><span class="new-blinder" id="blink">New</span> Upcoming events are...</a>     <a href="#" class="annonce-source">teckfizo</a>
+      </marquee>
+    </div>
   </div>
+  <!-- Announcements section ends -->
 
   <main>
     <!--carousel-->
@@ -132,62 +175,65 @@
   </main>
   <footer class="footer">
     <div class="footer-container">
-      <div class="column1">
-        <div>
-          <h4>Quick Links</h4>
+      <div class="row">
+        <div class="column1 col-sm-3">
+          <div>
+            <h4>Quick Links</h4>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#">Pay to UCEN</a></li>
+              <li><a href="#">pay semester fees</a></li>
+              <li><a href="#">UCEN E_Mail(staff)</a></li>
+              <li><a href="#">Student login</a></li>
+              <li><a href="#">staff payslip</a></li>
+              <li><a href="#">admission fee 2023</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="links">
-          <ul>
-            <li><a href="#">Pay to UCEN</a></li>
-            <li><a href="#">pay semester fees</a></li>
-            <li><a href="#">UCEN E_Mail(staff)</a></li>
-            <li><a href="#">Student login</a></li>
-            <li><a href="#">staff payslip</a></li>
-            <li><a href="#">admission fee 2023</a></li>
-          </ul>
+        <div class="column1 col-sm-3">
+          <div>
+            <h4>Important Links</h4>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#">Anna university Chennai</a></li>
+              <li><a href="#">Results</a></li>
+              <li><a href="#">student E-mail</a></li>
+              <li><a href="#">student datasheet</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column1 col-sm-3">
+          <div>
+            <h4>Other Links</h4>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#">Swayam/a></li>
+              <li><a href="#">NPTEL</a></li>
+              <li><a href="#">AICTE</a></li>
+              <li><a href="#">MHRD</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column1 col-sm-3">
+          <div>
+            <h4>Contact info</h4>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="#">Pay to UCEN</a></li>
+              <li><a href="#">pay semester fees</a></li>
+              <li><a href="#">UCEN E_Mail(staff)</a></li>
+              <li><a href="#">Student login</a></li>
+              <li><a href="#">staff payslip</a></li>
+              <li><a href="#">admission fee 2023</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="column1">
-        <div>
-          <h4>Important Links</h4>
-        </div>
-        <div class="links">
-          <ul>
-            <li><a href="#">Anna university Chennai</a></li>
-            <li><a href="#">Results</a></li>
-            <li><a href="#">student E-mail</a></li>
-            <li><a href="#">student datasheet</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="column1">
-        <div>
-          <h4>Other Links</h4>
-        </div>
-        <div class="links">
-          <ul>
-            <li><a href="#">Swayam/a></li>
-            <li><a href="#">NPTEL</a></li>
-            <li><a href="#">AICTE</a></li>
-            <li><a href="#">MHRD</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="column1">
-        <div>
-          <h4>Contect info</h4>
-        </div>
-        <div class="links">
-          <ul>
-            <li><a href="#">Pay to UCEN</a></li>
-            <li><a href="#">pay semester fees</a></li>
-            <li><a href="#">UCEN E_Mail(staff)</a></li>
-            <li><a href="#">Student login</a></li>
-            <li><a href="#">staff payslip</a></li>
-            <li><a href="#">admission fee 2023</a></li>
-          </ul>
-        </div>
-      </div>
+
     </div>
   </footer>
 </body>
