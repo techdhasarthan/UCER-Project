@@ -1,0 +1,46 @@
+.vc{
+    margin-top: 15px;
+    text-align: center;
+    background: linear-gradient(to right,#FF5F6D,#FFC371);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.design-vc{
+    height: 550px;
+    width: 100%;
+}
+
+.design-vc-image{
+    background-color: #FFC371;
+    border-radius: 10px;
+    margin-top: 15px !important;
+    margin-bottom: 25px;
+    width: 35% !important;
+    padding-bottom: 20px;
+}
+
+.design-vc-image img{
+    width:238px;
+    height:296px;
+    margin: 10px;
+}
+
+.vc-content{
+    text-align: center;
+}
+
+.vc-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 7px;
+    padding: 8px 8px;
+    background-color: #FF5F6D;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.vc-content a:hover{
+    background-color: greenyellow;
+}
