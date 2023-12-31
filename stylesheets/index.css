@@ -119,56 +119,6 @@ body {
 
 }
 
-/* .about_container {
-  margin-top: 10px;
-  background-color: #fff;
-  overflow: hidden;
-
-}
-
-.about_img{
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.about_text {
- margin-top: 100%;
-
-}
-
-.about_subtitle{
-  background-color: rgb(124, 20, 37);
- 
- } */
-
-
-
-
-
-
-
-/* 600px */
-
-/* @media screen and (min-width: 768px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .ucer img{
-    height: 2cm;
-  }
-
- .topnav a {
-  color: black;
- }
-
-
-} */
-
-/* @media screen and (min-width: 600px) { */
 .topnav.responsive {
   position: relative;
 }
@@ -180,8 +130,6 @@ body {
 }
 
 .topnav a {
-  /* color: black;
-  text-decoration: none; */
   float: left;
   display: block;
   color: black;
@@ -199,8 +147,6 @@ body {
 
 
 .head a {
-  /* float: left; */
-  /* display: block; */
   color: black;
   text-align: center;
   padding: 4px 4px;
@@ -213,9 +159,6 @@ body {
   height: 30px;
   overflow: hidden;
   background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center; */
 }
 
 .right {
@@ -343,12 +286,9 @@ body {
 
 /*footer  */
 .footer-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; */
   margin: 20px;
   padding: 20px;
-  background-color: #9542e3;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   border-radius: 8px;
   overflow: hidden;
 }
@@ -362,7 +302,7 @@ body {
 
 .footer {
   padding: 20px;
-  background-color: #9542e3;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   border-radius: 8px;
   overflow: hidden;
 }
@@ -381,4 +321,53 @@ body {
   padding: 15px;
   width: fit-content;
   color: yellow;
+}
+
+.sub-menu-2{
+  display: none;
+  padding: auto;
+  
+}
+
+.hover-me:hover  .sub-menu-2{
+  position: absolute;
+  display: block;
+  margin-top: 43px;
+  margin-left: 155px;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  border-radius: 10px;
+  
+
+}
+
+
+.hover-me{
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar{
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu-3{
+  display: none;
+  padding: auto;
+  
+}
+
+.hover-me1:hover  .sub-menu-3{
+  position: absolute;
+  display: block;
+  margin-top: 255px;
+  margin-left: 218px;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  border-radius: 10px;
+  padding-left:0px;
+  padding-right: 40px;
+}
+
+.topnav a .placement{
+  text-decoration: none;
 }
