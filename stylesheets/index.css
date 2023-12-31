@@ -35,6 +35,46 @@ body {
   height: 100px;
 }
 
+/* Navbar section styles */
+.topnav{
+  padding: 7px 0;
+  background: linear-gradient(to right,#1fa2ff,#12D8FA,#A6FFCB);
+}
+.navbar-nav .reg-drop:hover>ul{
+  display: block;
+}
+
+.dropdown-submenu>.dropdown-menu{
+  position: relative;
+  top: 0;
+  margin-top: 30px;
+  left: 100%;
+}
+
+.dropdown-menu>li>a:hover::after{
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.dropdown>a::before{
+  transform: rotate(-90deg);
+}
+
+.dropdown>a:hover::after{
+  transform: rotate(-90deg) !important;
+}
+.reg-style{
+  padding: 4px 24px !important;
+}
+
+.sci-style{
+  padding: 4px 24px !important;
+}
+
+.dropdown-submenu>.sci-dropmenu{
+  margin-top: 135px;
+}
+
 /* Announcements section styles */
 .announcement-head {
   background: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
@@ -57,14 +97,23 @@ body {
   text-decoration: none;
 }
 
+.new-blinder{
+  background-color: red;
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: black;
+  font-size: 12px;
+  margin-right: 7px;
+}
+
 
 @media screen and (max-width: 1024px) {
   .topnav {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   }
 
-  .topnav a {
+  /* .topnav a {
     float: left;
     display: block;
     color: black;
@@ -76,7 +125,7 @@ body {
 
   .topnav a.active {
     color: black;
-  }
+  } */
 
   .head a {
     /* float: left; */
@@ -111,15 +160,9 @@ body {
     justify-self: right;
   }
 
-
-
-
-
-
-
 }
 
-.topnav.responsive {
+/* .topnav.responsive {
   position: relative;
 }
 
@@ -143,7 +186,7 @@ body {
 .topnav {
   overflow: hidden;
   background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
-}
+} */
 
 
 .head a {
@@ -336,8 +379,6 @@ body {
   margin-left: 155px;
   background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   border-radius: 10px;
-  
-
 }
 
 
