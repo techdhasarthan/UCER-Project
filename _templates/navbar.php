@@ -143,10 +143,18 @@
                             Admission
                         </a>
                         <ul class="dropdown-menu drop-hover" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">College Fee</a></li>
-                            <li><a class="dropdown-item" href="#">Hostel Fee</a></li>
-                            <li><a class="dropdown-item" href="#">Procedure For Fee Payment</a></li>
-                            <li><a class="dropdown-item" href="#">Required Documents</a></li>
+                            <?php
+                                $conn = Database::getConnection();
+                                $sql = "SELECT * FROM `admission`";
+
+                                $result = $conn->query($sql);
+
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $document_name = $row['doc_name'];
+                                    $document_source = $row['admis_doc'];
+                                    echo "<li><a class='dropdown-item' href='./documents/admission/<?php echo $document_source'><?php echo $document_name ?></a></li>";
+                                }
+                            ?>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -155,25 +163,18 @@
                             Downloads
                         </a>
                         <ul class="dropdown-menu drop-hover" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Bonafide Certificate Form</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Internal Assessment
-                                    Details Form</a></li>
-                            <li><a class="dropdown-item" href="#">Hostel Rules and
-                                    Regulations</a></li>
-                            <li><a class="dropdown-item" href="#">College Rules and
-                                    Regulations</a></li>
-                            <li><a class="dropdown-item" href="#">Course Discontinue Form</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Hostel Admission Form</a></li>
-                            <li><a class="dropdown-item" href="#">Hostel Vacating Form</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Student College Leave
-                                    Form</a></li>
-                            <li><a class="dropdown-item" href="#">Student Hostel Leave
-                                    Form</a></li>
-                            <li><a class="dropdown-item" href="#">WiFi Registration Form</a></li>
-                            <li><a class="dropdown-item" href="#">Semester No-Due Form</a></li>
+                            <?php
+                                $conn = Database::getConnection();
+                                $sql = "SELECT * FROM `downloads`";
+
+                                $result = $conn->query($sql);
+
+                                while($row = mysqli_fetch_assoc($result)){
+                                    $document_name = $row['dow_doc_name'];
+                                    $document_source = $row['dow_doc'];
+                                    echo "<li><a class='dropdown-item' href='./documents/downloads/<?php echo $document_source'><?php echo $document_name ?></a></li>";
+                                }
+                            ?>
                         </ul>
                     </li>
                     <li class="nav-item">
