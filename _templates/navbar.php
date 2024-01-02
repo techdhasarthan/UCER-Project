@@ -112,6 +112,9 @@
                             Departments
                         </a>
                         <ul class="dropdown-menu drop-hover" aria-labelledby="navbarDropdown">
+                            <?php
+                                $conn = Database::getConnection();
+                            ?>
                             <li><a class="dropdown-item" href="#">CIVIL</a></li>
                             <li><a class="dropdown-item" href="#">CSE</a></li>
                             <li><a class="dropdown-item" href="#">ECE</a></li>
