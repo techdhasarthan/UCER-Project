@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- External stylesheets link -->
-    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/index.css?<?php echo time()?>">
     <link rel="stylesheet" href="./stylesheets/adminstration.css">
 
 </head>
@@ -90,7 +90,7 @@
                             Academic
                         </a>
                         <ul class="dropdown-menu drop-hover" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Courses Offered</a></li>
+                            <li><a class="dropdown-item" href="admission.php">Courses Offered</a></li>
                             <li class="dropdown-submenu reg-drop">
                                 <a class="nav-link dropdown-toggle active reg-style" href="#">Regulation</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -115,7 +115,7 @@
                             <?php
                                 $conn = Database::getConnection();
                             ?>
-                            <li><a class="dropdown-item" href="#">CIVIL</a></li>
+                            <li><a class="dropdown-item" href="civil.php">CIVIL</a></li>
                             <li><a class="dropdown-item" href="#">CSE</a></li>
                             <li><a class="dropdown-item" href="#">ECE</a></li>
                             <li><a class="dropdown-item" href="#">EEE</a></li>

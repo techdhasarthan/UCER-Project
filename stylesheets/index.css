@@ -412,3 +412,87 @@ body {
 .topnav a .placement{
   text-decoration: none;
 }
+
+.title h2{
+  text-align: center;
+}
+.title{
+  background-color: #12D8FA;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left:50px ;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+ 
+.courses{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left:100px ;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+th,td{
+  font-weight: bolder;
+}
+
+.civil_title{
+  background-color: #12D8FA;
+  padding-left: 40%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.civil-sec{
+  width: 300px;
+  flex:2 10px;
+  margin-left: -40px;
+  text-decoration: none;
+  padding-top: 40px;
+
+  
+}
+.civil-sec ul li {
+  padding: 10px;
+  list-style: none;
+  border-left: 8px solid red;
+  margin-bottom: 5px;
+}
+
+.civil-sec ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+ 
+
+}
+.staff-head{
+  margin-top: -30px;
+  font-weight: bolder;
+  padding-right: 60px;
+  padding-bottom: 10px;
+}
+
+
+.about_sec{
+  text-align: justify;
+} 
+.col-9{
+  text-align: justify;
+}
+
+.civil_about{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
