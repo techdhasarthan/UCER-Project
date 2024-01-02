@@ -155,7 +155,7 @@
                                 while($row = mysqli_fetch_assoc($result)){
                                     $document_name = $row['doc_name'];
                                     $document_source = $row['admis_doc'];
-                                    echo "<li><a class='dropdown-item' href='./documents/admission/<?php echo $document_source'><?php echo $document_name ?></a></li>";
+                                    echo "<li><a class='dropdown-item' href='./documents/admission/$document_source'> $document_name </a></li>";
                                 }
                             ?>
                         </ul>
@@ -175,7 +175,7 @@
                                 while($row = mysqli_fetch_assoc($result)){
                                     $document_name = $row['dow_doc_name'];
                                     $document_source = $row['dow_doc'];
-                                    echo "<li><a class='dropdown-item' href='./documents/downloads/<?php echo $document_source'><?php echo $document_name ?></a></li>";
+                                    echo "<li><a class='dropdown-item' href='./documents/downloads/$document_source'>$document_name</a></li>";
                                 }
                             ?>
                         </ul>
