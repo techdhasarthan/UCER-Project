@@ -135,10 +135,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="#">Placements</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="placements.php">Placements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="#">Hostel</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="hostel.php">Hostel</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active nav-hov" href="#" id="navbarDropdown" role="button"
@@ -181,13 +181,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="#">Gallery</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="#">Alumini</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="alumini.php">Alumini</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link active nav-hov" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
