@@ -413,6 +413,7 @@ body {
   text-decoration: none;
 }
 
+/* Department civil nav */
 .title h2{
   text-align: center;
 }
@@ -495,4 +496,54 @@ th,td{
 .civil_about{
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+/* end civil nav */
+
+/*start alumini nav*/
+.alumini_title{
+  background-color: #12D8FA;
+  padding-left: 37%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 2px;
+  margin-left: 10% ;
+  margin-right: 10%;
+  border-radius: 15px;
+}
+
+.subalumini_title{
+  padding-left: 47%;
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #180e8a;
+  font-weight: bolder;
+}
+
+.alumini_about{
+  padding-left: 10px;
+  margin-left: 10% ;
+  margin-right: 10%;
+  color: #180e8a;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.alumini_content{
+  text-align:justify;
+  padding-left: 10px;
+  margin-left: 10% ;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+
+.col-12 ul li{
+  margin-left: 11% ;
+  margin-right: 11%;
+}
+
+.col-12 a{
+  padding-left: 2%;
 }
