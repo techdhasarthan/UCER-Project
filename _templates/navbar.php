@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UCER - University College of Engineering, Ramanathapuram</title>
     <!-- bootstrap library link -->
     <link rel="shortcut icon" href="./images/annauniv_logo.png" type="image/x-icon">
