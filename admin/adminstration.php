@@ -7,12 +7,6 @@
 <?php load_template("dashboard") ?>
 
 
-<div id="btn">
-    <button type="button" class="btn btn-outline-success">Add New</button>
-    <button type="button" class="btn btn-outline-danger">Delete</button>
-</div>
-
-
 <div class="table-data">
     <div class="order">
         <div class="head">
@@ -20,6 +14,10 @@
             <i class='bx bx-search'></i>
             <i class='bx bx-filter'></i>
         </div>
+        <div id="btn">
+    <button type="button" class="btn btn-outline-success">Add New</button>
+    <button type="button" class="btn btn-outline-danger">Delete</button>
+</div>
         <table>
             <thead>
                 <tr>
