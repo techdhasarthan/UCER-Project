@@ -542,19 +542,10 @@ td {
 
 .civil-sec {
   width: 300px;
-  flex: 2 10px;
   margin-left: -40px;
   text-decoration: none;
-  padding-top: 40px;
+  padding-top: 10px;
 }
-
-.staff-head {
-  margin-top: -30px;
-  font-weight: bolder;
-  padding-right: 60px;
-  padding-bottom: 10px;
-}
-
 
 .about_sec {
   text-align: justify;
