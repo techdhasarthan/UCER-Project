@@ -610,3 +610,140 @@ td {
 .col-12 a{
   padding-left: 2%;
 }
+
+/* placement nav start */
+.card {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left:7px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+
+
+.card .title1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left:8px;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+  padding-top:20px
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  height: 3.125em;
+}
+
+.image{
+   padding-left:10px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.image img{
+  background: rgb(241, 241, 241);
+  width:300px;
+  height: 300px;
+  object-fit:cover;
+  display:grid;
+  place-items: center;
+}
+
+#card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+/* hostel adminstration */
+.card {
+  position: relative;
+  width: 20.875em;
+  height: 28.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left:7px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+
+
+.about_card .title1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left:8px;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+  padding-top:20px
+}
+
+.about_card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.about_card:active {
+  transform: scale(0.98);
+}
+
+.about_card:active::after {
+  height: 3.125em;
+}
+
+.image{
+   padding-left:10px;
+  padding-right:20px;
+  padding-top:60px;
+  padding-bottom:10px;
+}
+.image img{
+  background: rgb(241, 241, 241);
+  width:300px;
+  height: 300px;
+  object-fit:cover;
+  display:grid;
+  place-items: center;
+}
+
+#about_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-left: 100px;
+}
+
+#about_sec{
+  margin-left: 5%;
+}
+
+#second{
+  margin-left:26px ;
+}
+
+/* hostel rules */
+
+.col-md-9 ol li{
+  margin-top: 6px;
+  text-align: justify;
+}
