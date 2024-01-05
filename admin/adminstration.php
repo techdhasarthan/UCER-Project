@@ -9,15 +9,20 @@
 
 <div class="table-data">
     <div class="order">
-        <div class="head">
-            <h3>Adminstration</h3>
+        <div class="header">
+            <div class="row">
+                <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                    <h2 class="ml-lg-2">Adminstration</h2>
+                </div>
+                <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center action-section">
+                    <button class="btn btn-success add-btn" onclick="openForm()">Add new</button>
+                    <button class="btn btn-danger del-btn">Delete</button>
+                </div>
+            </div>
+            <!-- <h3>Adminstration</h3>
             <i class='bx bx-search'></i>
-            <i class='bx bx-filter'></i>
+            <i class='bx bx-filter'></i> -->
         </div>
-        <div id="btn">
-    <button type="button" class="btn btn-outline-success">Add New</button>
-    <button type="button" class="btn btn-outline-danger">Delete</button>
-</div>
         <table>
             <thead>
                 <tr>
@@ -59,9 +64,16 @@
                     <td><?php echo $profile ?></td>
                     <td><?php echo $collegename ?></td>
                     <td><?php echo $admin_image ?></td>
-                    <td>update</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                        </a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                        </a>
+                    </td>
                 </tr>
- <?php
+                <?php
 
 }
 
@@ -70,5 +82,25 @@
         </table>
     </div>
 </div>
+
+
+<!----edit-modal start--------->
+<<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!----edit-modal end--------->
 
 <?php load_template("footer") ?>

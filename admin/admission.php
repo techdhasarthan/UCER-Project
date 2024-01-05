@@ -7,18 +7,18 @@
 <?php load_template("dashboard") ?>
 
 
-<div id="btn">
-    <button type="button" class="btn btn-outline-success">Add New</button>
-    <button type="button" class="btn btn-outline-danger">Delete</button>
-</div>
-
-
 <div class="table-data">
     <div class="order">
-        <div class="head">
-            <h3>Admission</h3>
-            <i class='bx bx-search'></i>
-            <i class='bx bx-filter'></i>
+        <div class="header">
+            <div class="row">
+                <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+                    <h2 class="ml-lg-2">Adminstration</h2>
+                </div>
+                <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center action-section">
+                    <a href="#" class="btn btn-success add-btn">Add new</a>
+                    <a href="#" class="btn btn-danger del-btn">Delete</a>
+                </div>
+            </div>
         </div>
         <table>
             <thead>
@@ -30,7 +30,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php
+                <?php
                     $conn = Database::getConnection();
                     $sql = "SELECT * FROM `admission`";
 
@@ -52,7 +52,14 @@
                     <td><?php echo $admis_id ?></td>
                     <td><?php echo $doc_name ?></td>
                     <td><?php echo $document ?></td>
-                    <td>update</td>
+                    <td>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                        </a>
+                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                            <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                        </a>
+                    </td>
                 </tr>
 
                 <?php

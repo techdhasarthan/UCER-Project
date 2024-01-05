@@ -6,7 +6,7 @@ const menuLength = menuItem.length;
 //console.log(menuLength);
 
 for(let i=0;i<menuLength;i++){
-  console.log(menuItem[i]);
+  //console.log(menuItem[i]);
   if(menu[i].href == currentLocation){
     //console.log(menu[i].href);
     menuItem[i].className = 'active';
