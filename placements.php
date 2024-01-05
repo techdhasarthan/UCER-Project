@@ -14,11 +14,7 @@
                 <li><a href="#">Placement Records</a></li>
             </ul>
         </div>
-        <div class="col-sm-9">
-            <h3>Goals and Objectives</h3>
-            <p>Content added later</p>
-        </div>
-    </div>
+ 
 </div>
 
 <?php load_template("footer"); ?>
