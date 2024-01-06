@@ -66,11 +66,11 @@ body {
 }
 
 .reg-style {
-  padding: 4px 24px !important;
+  padding: 4px 16px !important;
 }
 
 .sci-style {
-  padding: 4px 24px !important;
+  padding: 4px 16px !important;
 }
 
 .dropdown-submenu>.sci-dropmenu {
@@ -137,6 +137,49 @@ body {
 
 .cse_nav li a:hover {
   color: blue;
+}
+
+
+/* hostel section css  */
+.hostel_online_payment {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.hostel_fees {
+  border: 1px solid #E6E6E6;
+  float: left;
+  display: flex;
+  border-radius: 10px;
+  width: 75%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fees_content {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: center;
+  margin: 55px 30px;
+  color: black;
+  font-size: 1.3rem;
+  color: #005BC2;
+}
+
+.fees_content span {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.hostel-head2 {
+  margin-bottom: 10px;
+}
+
+.hostel_fees:hover {
+  background-color: azure;
 }
 
 

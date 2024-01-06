@@ -98,11 +98,11 @@
                             <li class="dropdown-submenu reg-drop">
                                 <a class="nav-link dropdown-toggle active reg-style" href="#">Regulation</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">R-2021(CBCS)</a></li>
-                                    <li><a class="dropdown-item" href="#">R-2017(CBCS)
+                                    <li><a class="dropdown-item" href="./documents/regulations/UG R 2021.pdf">R-2021(CBCS)</a></li>
+                                    <li><a class="dropdown-item" href="./documents/regulations/R-2017 (CBCS) with amendments.pdf">R-2017(CBCS)
                                             with amendments</a></li>
-                                    <li><a class="dropdown-item" href="#">R-2017(CBCS)</a></li>
-                                    <li><a class="dropdown-item" href="#">R-2013</a></li>
+                                    <li><a class="dropdown-item" href="./documents/regulations/R-2017.pdf">R-2017(CBCS)</a></li>
+                                    <li><a class="dropdown-item" href="./documents/regulations/R-2013.pdf">R-2013</a></li>
                                 </ul>
                             </li>
                             <li><a class="dropdown-item" href="https://cac.annauniv.edu/" target="_blank">Curriculum &
@@ -139,10 +139,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="placements.php">Placements</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="placements.php?section=goals">Placements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active nav-hov" aria-current="page" href="hostel.php">Hostel</a>
+                        <a class="nav-link active nav-hov" aria-current="page" href="hostel.php?section=about">Hostel</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active nav-hov" href="#" id="navbarDropdown" role="button"
