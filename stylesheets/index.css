@@ -747,3 +747,41 @@ td {
   margin-top: 6px;
   text-align: justify;
 }
+
+/* hostel fees */
+
+.container-fee {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  border: 2px solid rgb(135, 135, 139);
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #c2e8ef;
+  margin-top: 8px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.info {
+  margin-left: 40px;
+  color: #053c64;
+}
+
+.info h3 a{
+  padding-left: 80px;
+  text-decoration: none;
+}
+
+.info p{
+  
+  text-align: center;
+}
