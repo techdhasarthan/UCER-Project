@@ -48,10 +48,53 @@
           </div>
         </div>
       </section>
-
+<!-- mission, vision , image -->
       <section class="contain">
+      <div class ="row">
+      <div id = "vision" class = "col-md-4">
+        <div>
+          <img class = "mis-img" src="./images/eye.png" alt="">
+        </div>
+        <div class = "mis-sub">
+        <h4>Vision</h4>
+        <p>In the dynamic environment of higher education, college serves as a crucible for intellectual and
+              personal
+              growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
+              but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
+              classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
+        </div>
+      </div>
 
-        <div class="mission">
+      <div class = "col-md-4">
+        
+          <img class = "mis-img" src="./images/target.png" alt="">
+        
+        <div class = "mis-sub">
+        <h4>Mission</h4>
+        <p >In the dynamic environment of higher education, college serves as a crucible for intellectual and
+              personal
+              growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
+              but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
+              classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
+        </div>
+      </div>
+
+      <div id = "achieve" class = "col-md-4">
+        <div>
+          <img class = "mis-img" src="./images/guarantee.png" alt="">
+        </div>
+        <div class = "mis-sub">
+        <h4>Achieve</h4>
+        <p>In the dynamic environment of higher education, college serves as a crucible for intellectual and
+              personal
+              growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
+              but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
+              classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
+        </div>
+      </div>
+</div>
+
+        <!-- <div class="mission">
           <div class="mis_head">
             <h4>mission</h4>
           </div>
@@ -75,7 +118,7 @@
               growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
               but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
               classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
-          </div>
+          </div> -->
         </div>
 
 
@@ -85,5 +128,7 @@
 
       </section>
     </div>
+
+
 
   </main>
