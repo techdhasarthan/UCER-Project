@@ -8,16 +8,46 @@
     <div class="row">
         <div class="col-md-3">
             <ul class="cse_nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Adminstration</a></li>
-                <li><a href="#">Fees</a></li>
-                <li><a href="#">Rules and Regulations</a></li>
-                <li><a href="#">Downloads</a></li>
+                <li><a href="hostel.php?section=about">About</a></li>
+                <li><a href="hostel.php?section=adminstration">Adminstration</a></li>
+                <li><a href="hostel.php?section=fees">Fees</a></li>
+                <li><a href="hostel.php?section=rules">Rules and Regulations</a></li>
+                <li><a href="hostel.php?section=downloads">Downloads</a></li>
             </ul>
         </div>
         <div class="col-sm-9">
-            <h3>About</h3>
-            <p>Content added later</p>
+
+            <?php
+                if(isset($_GET['section'])){
+                    $section = $_GET['section'];
+
+                    switch($section){
+                        case "about":
+                            load_template("hostel_about");
+                            break;
+                        
+                        case "adminstration":
+                            load_template("hostel_adminstration");
+                            break;
+
+                        case "fees":
+                            load_template("hostel_fees");
+                            break;
+
+                        case "rules":
+                            load_template("hostel_rules");
+                            break;
+
+                        case "downloads":
+                            load_template("hostel_downloads");
+                            break;
+
+                        default:
+                            load_template("hostel_about");
+                            break;
+                    }
+                }
+            ?>
         </div>
     </div>
 </div>

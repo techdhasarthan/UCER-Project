@@ -66,11 +66,11 @@ body {
 }
 
 .reg-style {
-  padding: 4px 24px !important;
+  padding: 4px 16px !important;
 }
 
 .sci-style {
-  padding: 4px 24px !important;
+  padding: 4px 16px !important;
 }
 
 .dropdown-submenu>.sci-dropmenu {
@@ -140,6 +140,49 @@ body {
 }
 
 
+/* hostel section css  */
+.hostel_online_payment {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.hostel_fees {
+  border: 1px solid #E6E6E6;
+  float: left;
+  display: flex;
+  border-radius: 10px;
+  width: 75%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fees_content {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: center;
+  margin: 55px 30px;
+  color: black;
+  font-size: 1.3rem;
+  color: #005BC2;
+}
+
+.fees_content span {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.hostel-head2 {
+  margin-bottom: 10px;
+}
+
+.hostel_fees:hover {
+  background-color: azure;
+}
+
+
 /* contact  page css */
 .dbox {
   width: 100%;
@@ -184,7 +227,7 @@ body {
   width: 100%;
 }
 
-.locationmap{
+.locationmap {
   margin-left: 20px;
   padding: 10px;
   align-content: center;
@@ -564,19 +607,19 @@ td {
 /* end civil nav */
 
 /*start alumini nav*/
-.alumini_title{
+.alumini_title {
   background-color: #12D8FA;
   padding-left: 37%;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 2px;
-  margin-left: 10% ;
+  margin-left: 10%;
   margin-right: 10%;
   border-radius: 15px;
 }
 
-.subalumini_title{
+.subalumini_title {
   padding-left: 47%;
   margin-top: 2px;
   padding-top: 20px;
@@ -585,29 +628,29 @@ td {
   font-weight: bolder;
 }
 
-.alumini_about{
+.alumini_about {
   padding-left: 10px;
-  margin-left: 10% ;
+  margin-left: 10%;
   margin-right: 10%;
   color: #180e8a;
   font-weight: bolder;
   margin-bottom: 10px;
 }
 
-.alumini_content{
-  text-align:justify;
+.alumini_content {
+  text-align: justify;
   padding-left: 10px;
-  margin-left: 10% ;
+  margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20px;
 }
 
-.col-12 ul li{
-  margin-left: 11% ;
+.col-12 ul li {
+  margin-left: 11%;
   margin-right: 11%;
 }
 
-.col-12 a{
+.col-12 a {
   padding-left: 2%;
 }
 
@@ -616,10 +659,10 @@ td {
   position: relative;
   width: 20.875em;
   height: 30.5em;
-  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 120ms;
-  padding-left:7px;
+  padding-left: 7px;
   align-items: center;
   justify-content: center;
   background: #fff;
@@ -630,11 +673,11 @@ td {
 .card .title1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
-  padding-left:8px;
+  padding-left: 8px;
   bottom: 1.875em;
   font-weight: 400;
   color: #000;
-  padding-top:20px
+  padding-top: 20px
 }
 
 .card:hover::after {
@@ -650,18 +693,19 @@ td {
   height: 3.125em;
 }
 
-.image{
-   padding-left:10px;
-  padding-right:20px;
-  padding-top:10px;
-  padding-bottom:10px;
+.image {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.image img{
+
+.image img {
   background: rgb(241, 241, 241);
-  width:300px;
+  width: 300px;
   height: 300px;
-  object-fit:cover;
-  display:grid;
+  object-fit: cover;
+  display: grid;
   place-items: center;
 }
 
@@ -677,10 +721,10 @@ td {
   position: relative;
   width: 20.875em;
   height: 28.5em;
-  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 120ms;
-  padding-left:7px;
+  padding-left: 7px;
   align-items: center;
   justify-content: center;
   background: #fff;
@@ -691,11 +735,11 @@ td {
 .about_card .title1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
-  padding-left:8px;
+  padding-left: 8px;
   bottom: 1.875em;
   font-weight: 400;
   color: #000;
-  padding-top:20px
+  padding-top: 20px
 }
 
 .about_card:hover::after {
@@ -711,18 +755,19 @@ td {
   height: 3.125em;
 }
 
-.image{
-   padding-left:10px;
-  padding-right:20px;
-  padding-top:60px;
-  padding-bottom:10px;
+.image {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 10px;
 }
-.image img{
+
+.image img {
   background: rgb(241, 241, 241);
-  width:300px;
+  width: 300px;
   height: 300px;
-  object-fit:cover;
-  display:grid;
+  object-fit: cover;
+  display: grid;
   place-items: center;
 }
 
@@ -733,17 +778,17 @@ td {
   padding-left: 100px;
 }
 
-#about_sec{
+#about_sec {
   margin-left: 5%;
 }
 
-#second{
-  margin-left:26px ;
+#second {
+  margin-left: 26px;
 }
 
 /* hostel rules */
 
-.col-md-9 ol li{
+.col-md-9 ol li {
   margin-top: 6px;
   text-align: justify;
 }
@@ -776,12 +821,12 @@ td {
   color: #053c64;
 }
 
-.info h3 a{
+.info h3 a {
   padding-left: 80px;
   text-decoration: none;
 }
 
-.info p{
-  
+.info p {
+
   text-align: center;
 }
