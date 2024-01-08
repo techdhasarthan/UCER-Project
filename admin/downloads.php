@@ -6,6 +6,24 @@
 
 <?php load_template("dashboard") ?>
 
+<?php
+    if(isset($_GET['delete'])){
+        $id = $_GET['delete'];
+
+        $conn = Database::getConnection();  
+        $sql = "DELETE FROM `downloads` WHERE `dow_id`={$id}";
+        $result = $conn->query($sql);
+
+        // TODO : Handle with javascript popup before delete the element
+        if(!$result){
+            die("MYSQL FAILED" . $conn->error($connection));
+        } else{
+            echo "The item is deleted successfully";
+        }
+    }
+
+?>
+
 <div class="table-data">
     <div class="order">
         <div class="header">
@@ -55,7 +73,7 @@
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal">
                             <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
                         </a>
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                        <a href="downloads.php?delete=<?php echo $dow_id;?>" class="delete" data-toggle="modal">
                             <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
                         </a>
                     </td>

@@ -13,7 +13,8 @@
       <!--google material icon-->
       <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
 
-    <title>AdminHub</title>
+    <title>UCER Admin</title>
+    <link rel="shortcut icon" href="./img/annauniv_logo.png" type="image/x-icon">
 </head>
 
 <body>

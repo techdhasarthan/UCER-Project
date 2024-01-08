@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>B.E. - Cumputer Science and Engineering</td>
+      <td>B.E. - Computer Science and Engineering</td>
       <td>2008</td>
       <td>60</td>
     </tr>

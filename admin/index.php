@@ -1,5 +1,6 @@
 <?php include "./libs/load.php" ?>
 
+
 <?php load_template('header') ?>
 
 <?php load_template('navbar') ?>
