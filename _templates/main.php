@@ -94,37 +94,11 @@
       </div>
 </div>
 
-        <!-- <div class="mission">
-          <div class="mis_head">
-            <h4>mission</h4>
-          </div>
-          <div class="mis_sub">
-            <p>In the dynamic environment of higher education, college serves as a crucible for intellectual and
-              personal
-              growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
-              but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
-              classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
-          </div>
-        </div>
 
-
-        <div class="vision">
-          <div class="vis_head">
-            <h4>vision</h4>
-          </div>
-          <div class="vis_sub">
-            <p>In the dynamic environment of higher education, college serves as a crucible for intellectual and
-              personal
-              growth. Students engage in a multifaceted journey, not only acquiring knowledge within their chosen field
-              but also honing critical thinking skills and cultivating a broader worldview. Beyond the confines of
-              classrooms, colleges are vibrant communities fostering collaboration, diversity, and innovation.</p>
-          </div> -->
-        </div>
-
-
+<!-- 
         <div class="image">
           <img src="./images/pic.png" alt="imge">
-        </div>
+        </div> -->
 
       </section>
     </div>

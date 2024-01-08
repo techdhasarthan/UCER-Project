@@ -40,16 +40,73 @@
   </div>
 </div>
 
-<script>
-    const carousel = document.querySelector('.carousel-eve');
-const button = document.querySelector('.carousel-button-eve');
+<!--  -->
+<div class = "cont-sec">
+<div><h4>VIT by the Numbers</h4></div>
+<div class = "cont-div">
+<div class = "col-3">
+  <img src="./images/handshake.png" alt="" srcset="">
+  <h3>300+</h3>
+  <p>Partnership</p>
+</div>
+<div class = "col-3">
+<img src="./images/rocket.png" alt="" srcset="">
+  <h3>830+</h3>
+  <p>Recuirters</p>
+</div>
+<div class = "col-3">
+<img src="./images/graduation-hat.png" alt="" srcset="">
+  <h3>14150+</h3>
+  <p>Placements</p>
+</div>
+<div class = "col-3">
+<img src="./images/star.png" alt="" srcset="">
+  <h3>8000+</h3>
+  <p>Super Dream</p>
+</div>
+</div>
+</div>
+<!-- our facilities starts -->
 
-button.addEventListener('click', () => {
-  carousel.scrollBy({
-    left: carousel.offsetWidth,
-    behavior: 'smooth'
-  });
-});
-    </script>
+<div class="carousel-fic">
+<div class = "carousel-item-fic" id="card text-center"><img class = "carousel-img-fic" id="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+        <div class = "carousel-content-fic" id="card-body">
+          <h5>DHSHASARATHAN<br />
+            <span> Software Developer </span>
+          </h5>
+          <p class="card-text">“ Something written ” </p>
+        </div>
+      </div>
+    
+    <div class = "carousel-item-fic" id="card text-center"><img class = "carousel-img-fic" id="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+        <div class = "carousel-content-fic" id="card-body">
+        <h5>DHSHASARATHAN<br />
+            <span> Software Developer </span>
+          </h5>
+          <p class="card-text">“ Something written ” </p>
+        </div>
+      </div>
+    
+    <div class = "carousel-item-fic" id="card text-center"><img class = "carousel-img-fic" id="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+        <div class = "carousel-content-fic" id="card-body">
+        <h5>DHSHASARATHAN<br />
+            <span> Software Developer </span>
+          </h5>
+          <p class="card-text">“ Something written ” </p>
+        </div>
+      
+    </div>
+    <div class = "carousel-item-fic" id="card text-center"><img class = "carousel-img-fic" id="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+        <div class = "carousel-content-fic" id="card-body">
+        <h5>DHSHASARATHAN<br />
+            <span> Software Developer </span>
+          </h5>
+          <p class="card-text">“ Something written ” </p>
+        </div>
+</div>
+</div>
+
+<!-- ends -->
+
 
 <?php load_template("footer"); ?>
