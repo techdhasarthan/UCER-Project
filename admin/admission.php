@@ -21,6 +21,7 @@
         } else{
             echo "The item is deleted successfully";
         }
+        header("Location: admission.php");
     }
 
 ?>
@@ -33,7 +34,7 @@
                     <h2 class="ml-lg-2">Adminstration</h2>
                 </div>
                 <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center action-section">
-                    <a href="#" class="btn btn-success add-btn">Add new</a>
+                    <a href="#" class="btn btn-success add-btn" id="addnew">Add new</a>
                     <a href="#" class="btn btn-danger del-btn">Delete</a>
                 </div>
             </div>
@@ -89,5 +90,50 @@
         </table>
     </div>
 </div>
+
+
+<!----Add new items start--------->
+
+<?php
+    $conn = Database::getConnection();
+
+    if(isset($_POST['new_admis'])){
+        $admis_doc_name = $_POST['admis_doc_name'];
+        $admis_doc = $_FILES['admis_doc']['name'];
+        $admis_doc_temp = $_FILES['admis_doc']['tmp_name'];
+
+        move_uploaded_file($admis_doc_temp,"../documents/admission/$admis_doc");
+
+        $sql = "INSERT INTO `admission`(`doc_name`, `admis_doc`) VALUES ('{$admis_doc_name}','{$admis_doc}')";
+
+        $result = $conn->query($sql); //TODO: handle success or error events using bootstrap model
+        header("Location: admission.php");
+    }
+
+?>
+<div class="popup">
+    <div class="popup-content">
+        <h3 class="d-flex align-items-center justify-content-center">Add New</h3>
+        <span id="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </span>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="admis_doc_name">
+                <label for="floatingInput">DOcument Name</label>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02" name="admis_doc">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+            <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center" name="new_admis">submit</button>
+        </form>
+    </div>
+</div>
+<!----Add new items ends--------->
 
 <?php load_template("footer") ?>

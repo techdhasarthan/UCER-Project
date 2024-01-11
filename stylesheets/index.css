@@ -182,6 +182,39 @@ body {
   background-color: azure;
 }
 
+/* carousel styles */
+.scrolling-panel img{
+  width: 100%;
+  height: 525px;
+}
+
+/* about button style  */
+.about-button{
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #5614B0;
+  background-color: azure;
+}
+
+.about-content{
+  text-align: justify;
+  font-size: 20px;
+}
+
+/* about block image style apply here */
+.center-image{
+  height:500px;
+  width:450px;
+  margin: 10px auto;
+  padding-top: 70px;
+  border-radius: 15px ;  
+  -webkit-box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);
+  -moz-box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);
+  box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);  
+}
+
 
 /* contact  page css */
 .dbox {
@@ -286,20 +319,6 @@ footer ul li a:hover{
     background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   }
 
-  /* .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .topnav a.active {
-    color: black;
-  } */
-
   .head a {
     /* float: left; */
     /* display: block; */
@@ -376,15 +395,11 @@ footer ul li a:hover{
 
 .about_img {
   justify-content: center;
-
-
 }
 
 .about_img img {
   width: 500px;
-  border-radius: 0.5rem;
-  margin: 0 auto;
-
+  margin: 0 20px;
 }
 
 .about_text {
@@ -404,12 +419,13 @@ footer ul li a:hover{
   padding-top: 15px;
 }
 
+/* .about_section{
+  margin: 10px;
+} */
+
 .about_container img {
   max-width: 100%;
-  height: auto;
-  padding-left: 25px;
-  border-radius: 5%;
-
+  margin-left: 15px;
 }
 
 .about {
@@ -427,25 +443,13 @@ footer ul li a:hover{
   color: blue;
 }
 
-.contain {
-
-  gap: 20px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .contain .col-md-4 {
   width: 30%;
-  padding: 10px;
   text-align: center;
-  border: 1px solid black;
   margin: 20px;
-  background-color: #94bfee;
-  height: 400px;
+  background-color: #CFE8FF;
+  height: 250px;
+  border-radius: 15px;
 }
 
 .mis-sub {
@@ -465,11 +469,11 @@ footer ul li a:hover{
 }
 
 #achieve {
-  background-color: #a0aab3;
+  background-color: #FFF2C6;
 }
 
 #vision {
-  background-color: #82dfac;
+  background-color: #FFE0D3;
 }
 
 .image img {
@@ -908,9 +912,9 @@ td {
 }
 
 /* our facilities styles */
-body {
+/* body {
   background: aliceblue;
-}
+} */
 
 
 
