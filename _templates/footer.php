@@ -54,7 +54,7 @@
   </div>
 </div>
     <!-- place footer here -->
-      <p style="margin-bottom: 0;">Copyright &copy; 2022. All Rights Reserved | UCER
+      <p style="margin-bottom: 0;">Copyright &copy; 2024. All Rights Reserved | UCER
       </p>
   </footer>
 

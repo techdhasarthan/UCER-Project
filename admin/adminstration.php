@@ -86,7 +86,7 @@
                     <td><?php echo $collegename ?></td>
                     <td><?php echo $admin_image ?></td>
                     <td>
-                        <a href="adminstration.php?action=edit&id=<?php echo $admin_id?>" id="edit" class="edit" data-toggle="modal">
+                        <a href="adminstration.php?action=edit&id=<?php echo $admin_id?>" id="edit" class="edit" data-toggle="modal" onclick="location.reload()">
                             <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
                         </a>
                         <a href="adminstration.php?delete=<?php echo $admin_id?>" class="delete" data-toggle="modal">

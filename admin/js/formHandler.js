@@ -30,18 +30,25 @@ document.getElementById("close").addEventListener("click", function () {
 // }
 
 
-const currentEditLocation = location.href;
+// const currentEditLocation = location.href;
 
-const editMenu = document.querySelector("#edit");
+// const editMenu = document.querySelector("#edit");
 
-if (editMenu.href == currentEditLocation) {
-  document.getElementById("edit").addEventListener("click", function () {
+// if (editMenu.href == currentEditLocation) {
+//   document.getElementById("edit").addEventListener("click", function () {
+//     document.querySelector(".popup-edit").style.display = "flex";
+//   });
+
+//   document.getElementById("close").addEventListener("click", function () {
+//     document.querySelector(".popup-edit").style.display = "none";
+//   });
+// }
+
+
+window.onload = function(){
+  document.getElementById("edit").addEventListener("click",function(){
     document.querySelector(".popup-edit").style.display = "flex";
   });
-
-  document.getElementById("close").addEventListener("click", function () {
-    document.querySelector(".popup-edit").style.display = "none";
-  });
-}
+};
 
 
