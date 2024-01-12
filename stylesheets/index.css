@@ -183,13 +183,13 @@ body {
 }
 
 /* carousel styles */
-.scrolling-panel img{
+.scrolling-panel img {
   width: 100%;
   height: 525px;
 }
 
 /* about button style  */
-.about-button{
+.about-button {
   font-weight: bold;
   display: inline-block;
   padding: 5px;
@@ -198,23 +198,83 @@ body {
   background-color: azure;
 }
 
-.about-content{
+.about-content {
   text-align: justify;
   font-size: 20px;
 }
 
 /* about block image style apply here */
-.center-image{
-  height:500px;
-  width:450px;
+.center-image {
+  height: 500px;
+  width: 450px;
   margin: 10px auto;
   padding-top: 70px;
-  border-radius: 15px ;  
-  -webkit-box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);
-  -moz-box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);
-  box-shadow: 7px 7px 0px 1px rgba(18,216,250,1);  
+  border-radius: 15px;
+  -webkit-box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
+  -moz-box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
+  box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
 }
 
+/*================== 07 Start progress baar section css ==================  */
+.port_progress_setions {
+  background: rgb(252, 194, 85);
+  padding: 80px 0;
+}
+
+.experience_section {
+  padding: 80px 0;
+}
+
+.port_progress_setions .prt_heading_white .prt_heading_wrapper .prt_head:after {
+  background: #fcc255;
+}
+
+/* Progress bar css */
+
+.port_progress_setions .circle {
+  width: 200px !important;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.port_progress_setions .circle canvas {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.port_progress_setions .circle strong {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+
+.port_progress_setions .circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.port_progress_setions .progressbar span {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Progress bar css */
+/*================== 07 End progress baar section css ==================  */
 
 /* contact  page css */
 .dbox {
@@ -268,13 +328,14 @@ body {
 
 
 /* footer section styles */
-footer{
+footer {
   padding-bottom: 10px;
-  background: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));;
+  background: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  ;
   text-align: center;
 }
 
-footer ul li{
+footer ul li {
   list-style: square;
   display: flex;
   padding: 3px 90px;
@@ -282,34 +343,66 @@ footer ul li{
 }
 
 
-footer ul li a{
+footer ul li a {
   text-decoration: none;
   color: black;
 }
 
 
-.footer-head{
- color: #FFE484; 
+.footer-head {
+  color: #FFE484;
 }
 
-footer ul li a:hover{
+footer ul li a:hover {
   animation: shake 0.5s;
   color: #AF1D5D;
 }
 
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 
@@ -878,44 +971,6 @@ td {
   margin-top: 35px;
 
 }
-
-.cont-div {
-  display: flex;
-  justify-content: center;
-
-
-}
-
-/*  */
-
-.cont-div .col-3 {
-  width: 20%;
-  text-align: center;
-  padding: 20px;
-}
-
-.cont-sec h4 {
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-}
-
-.cont-sec {
-  border: 1px solid rgb(117, 114, 114);
-  background-color: #a0aab3;
-}
-
-.cont-sec .cont-div img {
-  width: 50px;
-  margin-bottom: 20px;
-
-}
-
-/* our facilities styles */
-/* body {
-  background: aliceblue;
-} */
-
 
 
 .carousel-fic .carousel-img-fic {
