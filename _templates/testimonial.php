@@ -34,35 +34,53 @@
             <button class="carousel-button-eve">Button 3</button>
         </div>
     </div>
+    <div class="port_progress_setions ">
+        <!-- start progress bar section  -->
+        <div class="progress_section">
+            <div class="container">
+                <div class="port_progress_mainbox">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
+                            <div class="progressbar">
+                                <div class="second circle" data-percent="92">
+                                    <strong></strong>
+                                </div>
+                                <span>Projects </span>
+                            </div>
+                        </div>
 
-    <!--  -->
-    <div class="cont-sec">
-        <div>
-            <h4>VIT by the Numbers</h4>
+                        <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
+                            <div class="progressbar">
+                                <div class="second circle" data-percent="100">
+                                    <strong></strong>
+                                </div>
+                                <span>Team Work</span>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
+                            <div class="progressbar">
+                                <div class="second circle" data-percent="95">
+                                    <strong></strong>
+                                </div>
+                                <span>Happy Clients</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-sm-6 text-center">
+                            <div class="progressbar">
+                                <div class="second circle" data-percent="80">
+                                    <strong></strong>
+                                </div>
+                                <span>Creativity</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="cont-div">
-            <div class="col-3">
-                <img src="./images/handshake.png" alt="" srcset="">
-                <h3>300+</h3>
-                <p>Partnership</p>
-            </div>
-            <div class="col-3">
-                <img src="./images/rocket.png" alt="" srcset="">
-                <h3>830+</h3>
-                <p>Recuirters</p>
-            </div>
-            <div class="col-3">
-                <img src="./images/graduation-hat.png" alt="" srcset="">
-                <h3>14150+</h3>
-                <p>Placements</p>
-            </div>
-            <div class="col-3">
-                <img src="./images/star.png" alt="" srcset="">
-                <h3>8000+</h3>
-                <p>Super Dream</p>
-            </div>
-        </div>
-    </div>
+    </div><!-- End progress bar section  -->
+
     <!-- our facilities starts -->
 
     <div class="carousel-fic">

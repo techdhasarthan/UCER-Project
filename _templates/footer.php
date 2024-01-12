@@ -54,12 +54,16 @@
   </div>
 </div>
     <!-- place footer here -->
-      <p style="margin-bottom: 0;">Copyright &copy; 2024. All Rights Reserved | UCER
+      <p style="margin-bottom: 0;">Copyright &copy; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved | UCER
       </p>
   </footer>
 
   <!-- External js files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/blink.js"></script>
+  <script src="./js/testimonial.js"></script>
+  <script src="./js/circle-progress.js"></script>
+  <script src="./js/circleprogress-call.js"></script>
 </body>
 
 </html>
