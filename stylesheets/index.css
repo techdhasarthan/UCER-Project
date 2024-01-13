@@ -1041,3 +1041,115 @@ td {
   margin-left: 15px;
   text-align: justify;
 }
+
+/*  */
+
+
+
+.card-mem {
+  display: flex;
+  height: 380px;
+  width: 500px;
+  border: 1px solid black;
+  margin: 30px auto;
+
+}
+
+.col-9 {
+  border-bottom: 2px solid black;
+}
+
+.left-side {
+  flex-basis: 50%;
+  background-color: lightgray;
+
+
+}
+
+.right-side {
+  flex-basis: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+.col-mem-1 {
+  justify-content: space-between;
+}
+
+.col-4 {
+  display: block;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+
+.card-mem-1 {
+  display: flex;
+  margin-left: -38px;
+  height: 380px;
+  width: 500px;
+  border: 1px solid black;
+
+
+
+}
+
+.right-head {
+  border-bottom: 2px solid rgb(237, 229, 72);
+  margin-bottom: 20px;
+}
+
+.card-mem-2 {
+  display: flex;
+  margin-left: -38px;
+  height: 380px;
+  width: 500px;
+  border: 1px solid black;
+
+
+}
+
+.col-8 {
+  margin-top: 20px;
+  text-decoration: none;
+
+}
+
+.col-list {
+  margin-left: 15%;
+  width: 50%;
+  text-align: justify;
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: square;
+    font-weight: bold;
+
+  }
+
+}
+
+.col-8 h2 {
+  font-weight: bolder;
+  margin: 0 30% 20px 0;
+  color: #005BC2;
+}
+
+
+#col-off h4 {
+  font-weight: bolder;
+  margin: 0 30% 20px 0;
+  color: #005BC2;
+  text-align: justify;
+}
+
+.eligiblity {
+  text-align: justify;
+  font-weight: bold;
+}
+
+.others {
+  text-align: justify;
+  font-weight: bold;
+}
