@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script><!--TODO: change to the footer later -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- External stylesheets link -->
     <link rel="stylesheet" href="./stylesheets/index.css?<?php echo time()?>">
     <link rel="stylesheet" href="./stylesheets/adminstration.css">

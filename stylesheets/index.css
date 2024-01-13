@@ -276,6 +276,80 @@ body {
 /* Progress bar css */
 /*================== 07 End progress baar section css ==================  */
 
+/* Testimonial section css  */
+.testimonials-head{
+  text-align: center;
+  margin: 20px;
+}
+
+.swiper-container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  max-width: 1100px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-card {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-card img {
+  width: 130px;
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
+h3,
+h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #222222;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #0096FF;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  color: #0096FF;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 32px;
+}
+
+.review i {
+  color: orange;
+}
 /* contact  page css */
 .dbox {
   width: 100%;
@@ -938,9 +1012,6 @@ td {
   margin-right: 20px;
   scroll-snap-align: start;
   border-bottom: 4px solid orange;
-
-
-
 }
 
 .carousel-img-eve {
@@ -969,75 +1040,4 @@ td {
   cursor: pointer;
   margin-left: 35%;
   margin-top: 35px;
-
-}
-
-
-.carousel-fic .carousel-img-fic {
-  max-width: 100px;
-  border-radius: 50%;
-  margin-top: -60px;
-  margin-left: 30.3%;
-  box-shadow: 0 8px 20px -4px #abbcc9;
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  gap: 20px;
-}
-
-
-.carousel-fic {
-  display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  height: 550px;
-  margin-bottom: 20px;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 50px;
-  margin-right: 80%;
-
-}
-
-.carousel-fic::-webkit-scrollbar {
-  display: block;
-}
-
-.carousel-item-fic {
-  flex: 0 0 auto;
-  width: 350px;
-  margin-right: 20px;
-  scroll-snap-align: start;
-  padding: 0 10px;
-  border-radius: 20px;
-  border: 0;
-  height: 400px;
-  width: 352px;
-  margin-top: 80px;
-  background: #fff;
-  box-shadow: 0 8px 30px -7px aliceblue;
-
-
-
-}
-
-.carousel-content-fic h5 {
-  color: #01b0f8;
-  font-size: 21px;
-  line-height: 1.3;
-  text-align: center;
-  padding-top: 20px;
-
-  span {
-    font-size: 18px;
-    color: #666666;
-  }
-}
-
-.carousel-content-fic .card-text {
-  margin-left: 15px;
-  text-align: justify;
 }

@@ -82,52 +82,78 @@
     </div><!-- End progress bar section  -->
 
     <!-- our facilities starts -->
-
-    <div class="carousel-fic">
-        <div class="carousel-item-fic" id="card text-center"><img class="carousel-img-fic" id="card-img-top"
-                src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
-                alt="">
-            <div class="carousel-content-fic" id="card-body">
-                <h5>DHSHASARATHAN<br />
-                    <span> Software Developer </span>
-                </h5>
-                <p class="card-text">“ Something written ” </p>
+    <div class="swiper-container">
+        <h2 class="testimonials-head">Testimonials</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-card">
+                        <img src="images/ms.jpg" alt="" srcset="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est,
+                            ut libero doloribus</p>
+                        <h3>Satya Nadella</h3>
+                        <h4>CEO, Microsoft</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-card">
+                        <img src="images/oracle.jpg" alt="" srcset="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half"></i></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est,
+                            ut libero doloribus</p>
+                        <h3>Safra Catz</h3>
+                        <h4>CEO, Oracle </h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-card">
+                        <img src="images/oracle.jpg" alt="" srcset="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half"></i></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est,
+                            ut libero doloribus</p>
+                        <h3>Safra Catz</h3>
+                        <h4>CEO, Oracle </h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-card">
+                        <img src="images/fb.jpg" alt="" srcset="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est,
+                            ut libero doloribus</p>
+                        <h3>Mark Zuckerberg</h3>
+                        <h4>CEO, Facebook</h4>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="carousel-item-fic" id="card text-center"><img class="carousel-img-fic" id="card-img-top"
-                src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
-                alt="">
-            <div class="carousel-content-fic" id="card-body">
-                <h5>DHSHASARATHAN<br />
-                    <span> Software Developer </span>
-                </h5>
-                <p class="card-text">“ Something written ” </p>
-            </div>
-        </div>
-
-        <div class="carousel-item-fic" id="card text-center"><img class="carousel-img-fic" id="card-img-top"
-                src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
-                alt="">
-            <div class="carousel-content-fic" id="card-body">
-                <h5>DHSHASARATHAN<br />
-                    <span> Software Developer </span>
-                </h5>
-                <p class="card-text">“ Something written ” </p>
-            </div>
-
-        </div>
-        <div class="carousel-item-fic" id="card text-center"><img class="carousel-img-fic" id="card-img-top"
-                src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
-                alt="">
-            <div class="carousel-content-fic" id="card-body">
-                <h5>DHSHASARATHAN<br />
-                    <span> Software Developer </span>
-                </h5>
-                <p class="card-text">“ Something written ” </p>
-            </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
-
-    <!-- ends -->
 </div>

@@ -60,8 +60,9 @@
 
   <!-- External js files -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/blink.js"></script>
-  <script src="./js/testimonial.js"></script>
+  <script src="./js/swiper.js"></script>
   <script src="./js/circle-progress.js"></script>
   <script src="./js/circleprogress-call.js"></script>
 </body>
