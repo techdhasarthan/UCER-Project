@@ -6,49 +6,19 @@ document.getElementById("close").addEventListener("click", function () {
   document.querySelector(".popup").style.display = "none";
 });
 
-// function myFunction(){
-//   document.getElementById("edit").addEventListener("click", function(){
-//     document.querySelector(".popup-edit").style.display = "flex";
-//   });
+window.onload = function () {
+  const form = document.getElementById("myForm");
+  const popupContent = document.getElementById("popup-content");
 
-//   document.getElementById("close").addEventListener("click",function(){
-//     document.querySelector(".popup-edit").style.display = "none";
-//   });
-// }
+  document.getElementById("edit").addEventListener("click", function () {
+    localStorage.setItem("formData", form.innerHTML);
 
-// window.onload = function() {
-//   var reloading = sessionStorage.getItem("reloading");
-//   if (reloading) {
-//       sessionStorage.removeItem("reloading");
-//       myFunction();
-//   }
-// }
+    const storedFormData = localStorage.getItem("formData");
 
-// function reloadP() {
-//   sessionStorage.setItem("reloading", "true");
-//   document.location.reload();
-// }
+    if (storedFormData) {
+      popupContent.innerHTML = storedFormData;
+    }
 
-
-// const currentEditLocation = location.href;
-
-// const editMenu = document.querySelector("#edit");
-
-// if (editMenu.href == currentEditLocation) {
-//   document.getElementById("edit").addEventListener("click", function () {
-//     document.querySelector(".popup-edit").style.display = "flex";
-//   });
-
-//   document.getElementById("close").addEventListener("click", function () {
-//     document.querySelector(".popup-edit").style.display = "none";
-//   });
-// }
-
-
-window.onload = function(){
-  document.getElementById("edit").addEventListener("click",function(){
-    document.querySelector(".popup-edit").style.display = "flex";
+    popupContent.style.display = "flex";
   });
 };
-
-

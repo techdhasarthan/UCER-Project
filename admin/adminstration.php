@@ -225,6 +225,7 @@
     }
 
 ?>
+
 <div class="popup-edit">
     <div class="popup-content">
         <h3 class="d-flex align-items-center justify-content-center">Add New</h3>
@@ -235,7 +236,8 @@
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
             </svg>
         </span>
-        <form action="" method="post" enctype="multipart/form-data">
+        
+        <form action="" method="post" enctype="multipart/form-data" id = "myForm" class = "myForm">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="admin_name">
                 <label for="floatingInput">Admin Name</label>
@@ -258,7 +260,12 @@
             </div>
             <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center" name="new_admin">submit</button>
         </form>
+
     </div>
+</div>
+
+<div id = "displayData">
+
 </div>
 <!----edit items ends--------->
 
