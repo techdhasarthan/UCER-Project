@@ -20,7 +20,6 @@
 </div>
     <div class="col-9">
       <h2 class = "civil_about">About</h2>
-      hill
     </div>
   </div>
 </div>

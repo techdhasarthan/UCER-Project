@@ -71,7 +71,7 @@
         <!-- mission, vision , image -->
         <section class="contain">
             <div class="row">
-                <div id="vision" class="col-md-4">
+                <div id="vision" class="col-md-4 mis-vis">
                     <div>
                         <img class="mis-img" src="./images/eye.png" alt="">
                     </div>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 mis-vis">
 
                     <img class="mis-img" src="./images/target.png" alt="">
 
@@ -93,7 +93,7 @@
                     </div>
                 </div>
 
-                <div id="achieve" class="col-md-4">
+                <div id="achieve" class="col-md-4 mis-vis">
                     <div>
                         <img class="mis-img" src="./images/guarantee.png" alt="">
                     </div>
