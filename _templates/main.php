@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 mis-vis">
+                <div id = "mission" class="col-md-4 mis-vis">
 
                     <img class="mis-img" src="./images/target.png" alt="">
 

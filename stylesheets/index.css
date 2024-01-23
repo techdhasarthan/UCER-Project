@@ -1,3 +1,45 @@
+@media screen and (max-width: 768px) {
+
+  #image_banner {
+    display: none;
+  }
+
+  div #vision {
+    width: 500px;
+    margin-left: 20px;
+
+
+  }
+
+  div #mission {
+    width: 500px;
+    margin-left: 20px;
+
+
+  }
+
+  div #achieve {
+    width: 500px;
+    margin-left: 20px;
+
+
+  }
+
+  div #vc-content {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  div #civil_about {
+    width: 80%;
+    background-color: #000;
+
+  }
+}
+
+
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
