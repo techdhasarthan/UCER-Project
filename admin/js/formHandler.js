@@ -6,19 +6,24 @@ document.getElementById("close").addEventListener("click", function () {
   document.querySelector(".popup").style.display = "none";
 });
 
-window.onload = function () {
+try {
+
+// window.onload = function () {
   const form = document.getElementById("myForm");
   const popupContent = document.getElementById("popup-content");
-
+  console.log("On load")
   document.getElementById("edit").addEventListener("click", function () {
-    localStorage.setItem("formData", form.innerHTML);
+    // localStorage.setItem("formData", form.innerHTML);
 
-    const storedFormData = localStorage.getItem("formData");
+    // const storedFormData = localStorage.getItem("formData");
 
-    if (storedFormData) {
-      popupContent.innerHTML = storedFormData;
-    }
+    // if (storedFormData) {
+    //   popupContent.innerHTML = storedFormData;
+    // }
 
     popupContent.style.display = "flex";
   });
-};
+// };
+}catch(e) {
+  console.log(e)
+}

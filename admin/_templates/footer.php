@@ -3,4 +3,4 @@
 <script src="./js/formHandler.js?<?php echo time();?> "></script>
 <script src="./js/script.js?<?php echo time(); ?>"></script>
 </body>
-</html>
+</html> 

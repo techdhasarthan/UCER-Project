@@ -86,7 +86,7 @@
                     <td><?php echo $collegename ?></td>
                     <td><?php echo $admin_image ?></td>
                     <td>
-                        <a href="adminstration.php?action=edit&id=<?php echo $admin_id?>" id="edit" class="edit" data-toggle="modal" onclick="location.reload()">
+                        <a href="adminstration.php?action=edit&id=<?php echo $admin_id?>" id="edit" class="edit" data-toggle="modal">
                             <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
                         </a>
                         <a href="adminstration.php?delete=<?php echo $admin_id?>" class="delete" data-toggle="modal">
@@ -158,20 +158,20 @@
         </span>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="admin_name">
+                <input type="text" class="form-control"  placeholder="Name" name="admin_name">
                 <label for="floatingInput">Admin Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Role" name="admin_role">
+                <input type="text" class="form-control"  placeholder="Role" name="admin_role">
                 <label for="floatingPassword">Admin Role</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="College Name" name="collegename">
-                <label for="floatingPassword">College Name</label>
+                <input type="text" class="form-control"  placeholder="College Name" name="collegename">
+                <label for="collegename">College Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="profile" name="profile">
-                <label for="floatingPassword">Profile Link</label>
+                <input type="text" class="form-control" placeholder="profile" name="profile">
+                <label for="profilelink">Profile Link</label>
             </div>
             <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02" name="admin_image">
@@ -227,7 +227,7 @@
 ?>
 
 <div class="popup-edit">
-    <div class="popup-content">
+    <div id="popup-content" class="popup-content">
         <h3 class="d-flex align-items-center justify-content-center">Add New</h3>
         <span id="close">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle"
@@ -237,21 +237,21 @@
             </svg>
         </span>
         
-        <form action="" method="post" enctype="multipart/form-data" id = "myForm" class = "myForm">
+        <form method="post" enctype="multipart/form-data" id = "myForm" class = "myForm">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Name" name="admin_name">
+                <input type="text" class="form-control"  placeholder="Name" name="admin_name">
                 <label for="floatingInput">Admin Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Role" name="admin_role">
+                <input type="text" class="form-control"  placeholder="Role" name="admin_role">
                 <label for="floatingPassword">Admin Role</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="College Name" name="collegename">
+                <input type="text" class="form-control"  placeholder="College Name" name="collegename">
                 <label for="floatingPassword">College Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="profile" name="profile">
+                <input type="text" class="form-control"  placeholder="profile" name="profile">
                 <label for="floatingPassword">Profile Link</label>
             </div>
             <div class="input-group mb-3">

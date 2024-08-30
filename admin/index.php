@@ -1,14 +1,31 @@
 <?php include "./libs/load.php" ?>
 
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: sign_in.php');
+	exit;
+ } 
+?>
 
-<?php load_template('header') ?>
+<?php
 
-<?php load_template('navbar') ?>
+// echo $_SESSION['name'];
+
+ load_template('header');
+
+ load_template('navbar');
 
 
-<?php load_template('dashboard') ?>
+ load_template('dashboard');
 
-<?php load_template('table')?>
+ load_template('table');
 
 
-<?php load_template('footer') ?>
+ load_template('footer');
+
+
+
+?>
