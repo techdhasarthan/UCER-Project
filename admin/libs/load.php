@@ -7,7 +7,7 @@ global $__site_config;
 $__site_config = "../../ucerconfig.json";
 
 function load_template($filename){
-    include $_SERVER['DOCUMENT_ROOT'] . "/first/ucer/admin/_templates/$filename.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/admin/_templates/$filename.php";
 }
 
 function get_config($key, $default = null)

@@ -1,4 +1,4 @@
-<!-- <pre>
+ <pre>
 
 <?php
 
@@ -12,6 +12,7 @@
 
 <?php 
 include_once "./libs/load.php";
+
 // print_r($_SERVER);
 
 $conn = Database::getConnection();
@@ -24,4 +25,4 @@ if($conn){
 
 
 ?>
-</pre> -->
+</pre>

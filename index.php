@@ -4,7 +4,7 @@
 
 <?php load_template("main"); ?>
 
-<?php load_template("testimonial")?>
+<!-- <?php //load_template("testimonial")?> -->
 
 <?php load_template("footer"); ?>
  
