@@ -1,3 +1,37 @@
+<?php include "./libs/load.php" ?>
+<?php
+
+if (isset($_POST["signup"])) {
+    $username = $_POST["userName"];
+    $email = $_POST["Email"];
+    $password = $_POST["password"];
+    $hashedPassword = md5($password);
+
+    echo "$username";
+
+    $conn = Database::getConnection();  
+    $sql = "INSERT INTO `users`( `username`, `password`, `email`) VALUES ('{$username}', '{$hashedPassword}', '{$email}')";
+    $result = $conn->query($sql);
+    
+
+    // TODO : Handle with javascript popup before delete the element
+    // if(!$result){
+    //     die("MYSQL FAILED" . $conn->error());
+    // } else{
+    //     echo "The item is deleted successfully";
+    // }
+    if (mysqli_connect_errno()) { // check connection
+        printf("Connect failed: %s\n", mysqli_connect_error);
+        exit();
+    }
+    header("Location: index.php");
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +51,7 @@
         <div class="text-center mt-4 name">
           SIGN UP
         </div>
-        <form class="p-3 mt-3">
+        <form class="p-3 mt-3" action="" method="POST">
             <div class="form-field d-flex align-items-center">
                 <span class="far fa-user"></span>
                 <input type="text" name="userName" id="userName" placeholder="Username">
@@ -28,14 +62,15 @@
             </div>
             <div class="form-field d-flex align-items-center">
                 <span class="fas fa-key"></span>
-                <input type="password" name="Repeat_password" id="pwd" placeholder="Repeat Password">
+                <input type="password" name="confirm_password" id="pwd" placeholder="Repeat Password">
             </div>
             <div class="form-field d-flex align-items-center">
                 <i class="fa-solid fa-envelope"></i>
                 <input type="Email" name="Email" id="Email" placeholder="Email Address">
             </div>
-            <button class="btn mt-3"><a class="btn_signin" href="sign_in.html">Sign In</a></button>
+            <button type="submit" class="btn btn-primary d-flex align-items-center justify-content-center" name="signup">signup</button>
         </form>
     </div>
+
 </body>
 </html>

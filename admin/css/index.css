@@ -768,3 +768,12 @@ td {
 	justify-content: center;
 	align-items: center;
 }
+
+
+.user_info{
+	display: none;
+}
+
+.profile:hover + .user_info{
+	display: block;
+}
