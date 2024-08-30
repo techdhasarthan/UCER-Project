@@ -1,92 +1,52 @@
-/*--------------------- Copyright (c) 2024 --------------------------
-[Master Stylesheet] 
-Project: UCER
-Version: 1.0.0
- ------------------------------------------------------------------- 
-[Table of contents] 
-01. Body 
-02. Topbar css 
-03. Navbar css
-04. carousel & about & mission css
-05. Latest News & Event CSS
-06. Progress Bar CSS
-07. Testimonial Section CSS
-08. Footer Section CSS
-09. Adminstration Section CSS
-10. Academic Section CSS
-11. Departments Section CSS
-12. Placement Section CSS
-13. Hostel Section CSS
-14. Alumini Section CSS
-15. Contact Section CSS
-16. Media Query CSS
+@media screen and (max-width: 768px) {
 
---------------------------------------------------------------------*/
+  #image_banner {
+    display: none;
+  }
+
+  div #vision {
+    width: 500px;
+    margin-left: 20px;
 
 
-/* ================== 01 body start ================== */
+  }
+
+  div #mission {
+    width: 500px;
+    margin-left: 20px;
+
+
+  }
+
+  div #achieve {
+    width: 500px;
+    margin-left: 20px;
+
+
+  }
+
+  div #vc-content {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  div #civil_about {
+    width: 80%;
+    background-color: #000;
+
+  }
+}
+
+
+
+
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #222222;
-  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
-img {
-  max-width: 100%
-}
-
-button,
-button:focus,
-input,
-input:focus,
-select,
-select:focus,
-textarea,
-textarea:focus {
-  outline: 0;
-  box-shadow: none
-}
-
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-  outline: 0;
-  cursor: pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Josefin Sans';
-  color: #222222;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  color: #777777;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* ================== 01 body End ================== */
-
-
-/* ================== 02 Topbar CSS Start ================== */
+/* topbar styles */
 .counsiling-info {
   text-align: center;
   color: black;
@@ -111,14 +71,13 @@ ul {
   color: black;
 }
 
+/* image banner section styles */
 .college-img-banner {
   width: 90%;
   height: 100px;
 }
 
-/* ================== 02 Topbar CSS Start ================== */
-
-/* ================== 03 Navbar CSS Start ================== */
+/* Navbar section styles */
 .topnav {
   padding: 7px 0;
   background: linear-gradient(to right, #1fa2ff, #12D8FA, #A6FFCB);
@@ -160,6 +119,7 @@ ul {
   margin-top: 135px;
 }
 
+/* Announcements section styles */
 .announcement-head {
   background: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
   padding: 5px 10px;
@@ -190,166 +150,114 @@ ul {
   margin-right: 7px;
 }
 
-/* ================== 03 Navbar CSS End ================== */
+/* navbar main section top header styles */
+.hostel-head {
+  color: #005BC2;
+  margin-top: 10px;
+  margin-left: 33px;
+}
 
-/* ================== 04  carousel & about & mission CSS Start ================== */
+
+/* Inner side header of nav sections */
+.cse_nav li {
+  list-style: none;
+}
+
+.cse_nav li a {
+  text-decoration: none;
+  color: black;
+  background-color: #F1F3F5;
+  width: 240px;
+  height: 40px;
+  display: inline-flex;
+  margin: 4px 5px;
+  border-left: 5px solid #005BC2;
+  padding-left: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cse_nav li a:hover {
+  color: blue;
+}
+
+
+/* hostel section css  */
+.hostel_online_payment {
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.hostel_fees {
+  border: 1px solid #E6E6E6;
+  float: left;
+  display: flex;
+  border-radius: 10px;
+  width: 75%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fees_content {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: center;
+  margin: 55px 30px;
+  color: black;
+  font-size: 1.3rem;
+  color: #005BC2;
+}
+
+.fees_content span {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.hostel-head2 {
+  margin-bottom: 10px;
+}
+
+.hostel_fees:hover {
+  background-color: azure;
+}
+
 /* carousel styles */
 .scrolling-panel img {
   width: 100%;
   height: 525px;
 }
 
-
-/* ABOUT SECTION */
-.about_container {
-  row-gap: 2rem;
-  text-align: center;
+/* about button style  */
+.about-button {
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: #5614B0;
+  background-color: azure;
 }
 
-.about_img {
-  justify-content: center;
-}
-
-.about_img img {
-  width: 500px;
-  margin: 0 20px;
-}
-
-.about_text {
+.about-content {
   text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.6;
-  padding: 10px;
+  font-size: 20px;
 }
 
-.sec-about .about_container {
-  display: grid;
-  gap: 10px;
-  margin-top: 10px;
-  background-color: #fff;
-  overflow: hidden;
-  grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
-  padding-top: 15px;
-}
-
-.about_container img {
-  max-width: 100%;
-  margin-left: 15px;
-}
-
-.about {
-  padding-right: 70%;
-  background-color: rgb(253, 253, 254);
-  height: fit-content;
-
-}
-
-.about h3 {
-  background-color: rgb(169, 167, 243);
-  padding-left: 5px;
-  width: 50%;
+/* about block image style apply here */
+.center-image {
+  height: 500px;
+  width: 450px;
+  margin: 10px auto;
+  padding-top: 70px;
   border-radius: 15px;
-  color: blue;
+  -webkit-box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
+  -moz-box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
+  box-shadow: 7px 7px 0px 1px rgba(18, 216, 250, 1);
 }
 
-/* Mission Section  */
-.contain .mis-vis {
-  width: 30%;
-  text-align: center;
-  margin: 20px;
-  background-color: #CFE8FF;
-  height: 250px;
-  border-radius: 15px;
-}
-
-.mis-sub {
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.6;
-  margin: 10px;
-  padding-top: 20px;
-}
-
-.mis-img {
-  width: 60px;
-  height: 60px;
-  margin-left: -260px;
-  margin-top: 20px;
-}
-
-#achieve {
-  background-color: #FFF2C6;
-}
-
-#vision {
-  background-color: #FFE0D3;
-}
-
-.image img {
-  width: 100%
-}
-
-/* ================== 04  carousel & about & mission CSS End ================== */
-
-/* ================== 05  Latest News & Event CSS Start ================== */
-
-.carousel-eve {
-  display: flex;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  height: 550px;
-  margin-bottom: 20px;
-  width: 70%;
-  margin-left: 15%;
-
-}
-
-.carousel-eve::-webkit-scrollbar {
-  display: block;
-}
-
-.carousel-item-eve {
-  flex: 0 0 auto;
-  width: 350px;
-  margin-right: 20px;
-  scroll-snap-align: start;
-  border-bottom: 4px solid orange;
-}
-
-.carousel-img-eve {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-
-}
-
-.carousel-content-eve {
-  text-align: center;
-  margin-top: 20px;
-  color: orange;
-}
-
-.carousel-content-eve p {
-  color: #005BC2;
-  margin-top: 30px;
-}
-
-.carousel-button-eve {
-  padding: 10px 20px;
-  background-color: coral;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-left: 35%;
-  margin-top: 35px;
-}
-
-/* ================== 05  Latest News & Event CSS End ================== */
-
-/* ================== 06  Progress Bar CSS Start ================== */
+/*================== 07 Start progress baar section css ==================  */
 .port_progress_setions {
   background: rgb(252, 194, 85);
   padding: 80px 0;
@@ -362,6 +270,8 @@ ul {
 .port_progress_setions .prt_heading_white .prt_heading_wrapper .prt_head:after {
   background: #fcc255;
 }
+
+/* Progress bar css */
 
 .port_progress_setions .circle {
   width: 200px !important;
@@ -405,88 +315,60 @@ ul {
   font-weight: 700;
 }
 
-/*================== 06 Progress Bar CSS End ==================  */
+/* Progress bar css */
+/*================== 07 End progress baar section css ==================  */
 
-/*================== 07 Testimonial Section CSS Start ==================  */
-
-/* Testimonial section css  */
-.testimonials-head {
-  text-align: center;
-  margin: 20px;
-}
-
-.swiper-container {
-  max-width: 1200px;
+/* contact  page css */
+.dbox {
   width: 100%;
-  position: relative;
-  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
-.mySwiper {
-  max-width: 1100px;
-  height: 350px;
-  display: flex;
-  align-items: center;
+@media (max-width: 767.98px) {
+  .dbox {
+    margin-bottom: 25px !important;
+    padding: 0 20px;
+  }
 }
 
-.swiper-card {
-  text-align: center;
-  background-color: #ffffff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+.dbox p {
+  margin-bottom: 0;
 }
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
+.dbox p span {
+  font-weight: 500;
+  color: #000;
 }
 
-.swiper-card img {
-  width: 130px;
+.dbox p a {
+  color: #46b5d1;
+}
+
+.dbox .icon {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-top: -70px;
+  background: #46b5d1;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-h3,
-h4 {
-  margin-bottom: 0px;
-  margin-top: 0px;
+.dbox .icon span {
+  font-size: 20px;
+  color: #fff;
 }
 
-p {
-  font-size: 15px;
-  line-height: 20px;
-  color: #222222;
+.dbox .text {
+  width: 100%;
 }
 
-h3 {
-  font-size: 16px;
+.locationmap {
+  margin-left: 20px;
+  padding: 10px;
+  align-content: center;
 }
 
-h4 {
-  font-size: 12px;
-  margin-top: 10px;
-  color: #0096FF;
-}
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-  color: #0096FF;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 32px;
-}
-
-.review i {
-  color: orange;
-}
-
-/*================== 07 Testimonial Section CSS End ==================  */
-
-/*================== 08 Footer Section CSS End ==================  */
 /* footer section styles */
 footer {
   padding-bottom: 10px;
@@ -565,59 +447,222 @@ footer ul li a:hover {
   }
 }
 
-/*================== 08 Footer Section CSS End ==================  */
 
-/*================== 09 Adminstration Section CSS Start ==================  */
-.vc {
-  margin-top: 15px;
+@media screen and (max-width: 1024px) {
+  .topnav {
+    /* overflow: hidden; */
+    background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  }
+
+  .head a {
+    /* float: left; */
+    /* display: block; */
+    color: black;
+    text-align: center;
+    padding: 4px 4px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+
+  .head {
+    height: 30px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+    /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+    justify-items: center;
+  }
+
+  .right {
+    padding-left: 20px;
+  }
+
+  .left {
+
+    padding-right: 10px;
+  }
+
+  .center {
+    justify-self: right;
+  }
+
+}
+
+.head a {
+  color: black;
   text-align: center;
-  background: linear-gradient(to right, #FF5F6D, #FFC371);
-  padding: 10px 10px;
-  border-radius: 10px;
-}
-
-.design-vc {
-  height: 550px;
-  width: 100%;
-}
-
-.design-vc-image {
-  background-color: #FFC371;
-  border-radius: 10px;
-  margin-top: 15px !important;
-  margin-bottom: 25px;
-  width: 35% !important;
-  padding-bottom: 20px;
-}
-
-.design-vc-image img {
-  width: 238px;
-  height: 296px;
-  margin: 10px;
-}
-
-.vc-content {
-  text-align: center;
-}
-
-.vc-content a {
-  display: inline-block;
+  padding: 4px 4px;
   text-decoration: none;
-  color: white;
-  margin-top: 7px;
-  padding: 8px 8px;
-  background-color: #FF5F6D;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  font-size: 17px;
+
 }
 
-.vc-content a:hover {
-  background-color: greenyellow;
+.head {
+  height: 30px;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
 }
 
-/*================== 09 Adminstration Section CSS End ==================  */
+.right {
+  padding-left: 20px;
+}
 
-/*================== 10 Academic Section CSS End ==================  */
+.left {
+
+  padding-right: 10px;
+}
+
+.center {
+  justify-self: right;
+}
+
+/* ABOUT SECTION */
+
+.about_container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about_subtitle {
+  margin-bottom: 1rem;
+}
+
+.about_img {
+  justify-content: center;
+}
+
+.about_img img {
+  width: 500px;
+  margin: 0 20px;
+}
+
+.about_text {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.sec-about .about_container {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
+  padding-top: 15px;
+}
+
+/* .about_section{
+  margin: 10px;
+} */
+
+.about_container img {
+  max-width: 100%;
+  margin-left: 15px;
+}
+
+.about {
+  padding-right: 70%;
+  background-color: rgb(253, 253, 254);
+  height: fit-content;
+
+}
+
+.about h3 {
+  background-color: rgb(169, 167, 243);
+  padding-left: 5px;
+  width: 50%;
+  border-radius: 15px;
+  color: blue;
+}
+
+.contain .col-md-4 {
+  width: 30%;
+  text-align: center;
+  margin: 20px;
+  background-color: #CFE8FF;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.mis-sub {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.mis-img {
+  width: 60px;
+  height: 60px;
+  margin-left: -260px;
+  margin-top: 20px;
+
+}
+
+#achieve {
+  background-color: #FFF2C6;
+}
+
+#vision {
+  background-color: #FFE0D3;
+}
+
+.image img {
+  width: 100%
+}
+
+/*footer  */
+.sub-menu-2 {
+  display: none;
+  padding: auto;
+
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: 43px;
+  margin-left: 155px;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  border-radius: 10px;
+}
+
+
+.hover-me {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar {
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu-3 {
+  display: none;
+  padding: auto;
+
+}
+
+.hover-me1:hover .sub-menu-3 {
+  position: absolute;
+  display: block;
+  margin-top: 255px;
+  margin-left: 218px;
+  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+  border-radius: 10px;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.topnav a .placement {
+  text-decoration: none;
+}
+
 .title h2 {
   text-align: center;
 }
@@ -653,32 +698,6 @@ td {
   font-weight: bolder;
 }
 
-/*================== 10 Academic Section CSS End ==================  */
-
-/*================== 11 Departments Section CSS Start ==================  */
-
-.cse_nav li {
-  list-style: none;
-}
-
-.cse_nav li a {
-  text-decoration: none;
-  color: black;
-  background-color: #F1F3F5;
-  width: 240px;
-  height: 40px;
-  display: inline-flex;
-  margin: 4px 5px;
-  border-left: 5px solid #005BC2;
-  padding-left: 5px;
-  align-items: center;
-  justify-content: center;
-}
-
-.cse_nav li a:hover {
-  color: blue;
-}
-
 .civil_title {
   background-color: #12D8FA;
   padding-left: 40%;
@@ -708,219 +727,7 @@ td {
   text-align: justify;
 }
 
-/*================== 11 Departments Section CSS End ==================  */
-
-/*================== 12 Placements Section CSS Start ==================  */
-.card {
-  position: relative;
-  width: 20.875em;
-  height: 30.5em;
-  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 120ms;
-  padding-left: 7px;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-}
-
-.card .title1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  padding-left: 8px;
-  bottom: 1.875em;
-  font-weight: 400;
-  color: #000;
-  padding-top: 20px
-}
-
-.card:hover::after {
-  bottom: 0;
-  opacity: 1;
-}
-
-.card:active {
-  transform: scale(0.98);
-}
-
-.card:active::after {
-  height: 3.125em;
-}
-
-.image {
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.image img {
-  background: rgb(241, 241, 241);
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: grid;
-  place-items: center;
-}
-
-#card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  padding-left: 100px;
-}
-
-/*================== 12 Placements Section CSS End ==================  */
-
-/*================== 13 Hostel Section CSS Start ==================  */
-/* hostel adminstration */
-.card {
-  position: relative;
-  width: 20.875em;
-  height: 28.5em;
-  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 120ms;
-  padding-left: 7px;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-}
-
-.about_card .title1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  padding-left: 8px;
-  bottom: 1.875em;
-  font-weight: 400;
-  color: #000;
-  padding-top: 20px
-}
-
-.about_card:hover::after {
-  bottom: 0;
-  opacity: 1;
-}
-
-.about_card:active {
-  transform: scale(0.98);
-}
-
-.about_card:active::after {
-  height: 3.125em;
-}
-
-.image {
-  padding-left: 10px;
-  padding-right: 20px;
-  padding-top: 60px;
-  padding-bottom: 10px;
-}
-
-.image img {
-  background: rgb(241, 241, 241);
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  display: grid;
-  place-items: center;
-}
-
-#about_card {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  padding-left: 100px;
-}
-
-#about_sec {
-  margin-left: 5%;
-}
-
-#second {
-  margin-left: 26px;
-}
-
-/* hostel rules */
-.col-md-9 ol li {
-  margin-top: 6px;
-  text-align: justify;
-}
-
-.profile-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 10px;
-}
-
-.info {
-  margin-left: 40px;
-  color: #053c64;
-}
-
-.info h3 a {
-  padding-left: 80px;
-  text-decoration: none;
-}
-
-.info p {
-  text-align: center;
-}
-
-.hostel-head {
-  color: #005BC2;
-  margin-top: 10px;
-  margin-left: 33px;
-}
-
-/* hostel section css  */
-.hostel_online_payment {
-  height: 150px;
-  width: 150px;
-  padding: 10px;
-  border-radius: 100px;
-}
-
-.hostel_fees {
-  border: 1px solid #E6E6E6;
-  float: left;
-  display: flex;
-  border-radius: 10px;
-  width: 75%;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.fees_content {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  text-align: center;
-  margin: 55px 30px;
-  color: black;
-  font-size: 1.3rem;
-  color: #005BC2;
-}
-
-.fees_content span {
-  padding: 5px;
-  font-size: 0.8rem;
-}
-
-.hostel-head2 {
-  margin-bottom: 10px;
-}
-
-.hostel_fees:hover {
-  background-color: azure;
-}
-
-
-/*================== 13 Hostel Section CSS End ==================  */
-
-/*================== 14 Alumini Section CSS Start ==================  */
+/* end civil nav */
 
 /*start alumini nav*/
 .alumini_title {
@@ -970,132 +777,363 @@ td {
   padding-left: 2%;
 }
 
-/*================== 14 Alumini Section CSS End ==================  */
-
-/*================== 15 Contact Section CSS Start ==================  */
-
-/* contact  page css */
-.dbox {
-  width: 100%;
-  margin-bottom: 25px;
+/* placement nav start */
+.Tag {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
 }
 
-.dbox p {
-  margin-bottom: 0;
-}
 
-.dbox p span {
-  font-weight: 500;
+
+.Tag .Banner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left: 8px;
+  bottom: 1.875em;
+  font-weight: 400;
   color: #000;
+  padding-top: 20px
 }
 
-.dbox p a {
-  color: #46b5d1;
+.Tag:hover::after {
+  bottom: 0;
+  opacity: 1;
 }
 
-.dbox .icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #46b5d1;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.Tag:active {
+  transform: scale(0.98);
 }
 
-.dbox .icon span {
-  font-size: 20px;
-  color: #fff;
+.Tag:active::after {
+  height: 3.125em;
 }
 
-.dbox .text {
-  width: 100%;
+.image {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.locationmap {
-  margin-left: 20px;
-  padding: 10px;
-  align-content: center;
+.image img {
+  background: rgb(241, 241, 241);
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
 }
 
-/*================== 15 Contact Section CSS End ==================  */
-
-
-/*================== 16  media query css start ==================  */
-
-/* navbar section  */
-@media screen and (max-width: 1024px) {
-  .topnav {
-    background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
-  }
-
-  .head a {
-    color: black;
-    text-align: center;
-    padding: 4px 4px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .head {
-    height: 30px;
-    overflow: hidden;
-    background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
-    justify-items: center;
-  }
-
-  .right {
-    padding-left: 20px;
-  }
-
-  .left {
-
-    padding-right: 10px;
-  }
-
-  .center {
-    justify-self: right;
-  }
+#card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-left: 100px;
 }
 
-/* contact page  */
-@media (max-width: 767.98px) {
-  .dbox {
-    margin-bottom: 25px !important;
-    padding: 0 20px;
-  }
+/* hostel adminstration */
+.card_row_1 {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6f6;
+  margin-bottom: 40px;
+
+
 }
 
-/*================== 16 media query css end ==================  */
-.head a {
-  color: black;
-  text-align: center;
-  padding: 4px 4px;
-  text-decoration: none;
-  font-size: 17px;
+.card_row_2 {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6f6;
+  margin-bottom: 40px;
+  margin-left: 50px;
 }
 
-.head {
-  height: 30px;
-  overflow: hidden;
-  background-image: linear-gradient(to right, rgb(32, 133, 255), rgb(157, 255, 219));
+.card_row_3 {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6f6;
+  margin-bottom: 40px;
+  margin-left: 50px;
 }
 
-.right {
-  padding-left: 20px;
+.card_row_4 {
+  position: relative;
+  width: 20.875em;
+  height: 30.5em;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  padding-left: 7px;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6f6;
+  margin-bottom: 40px;
+
 }
 
-.left {
 
+#about_card_1 .title1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding-left: 8px;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+  padding-top: 20px
+}
+
+#about_card_1:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+#about_card_1:active {
+  transform: scale(0.98);
+}
+
+#about_card_1:active::after {
+  height: 3.125em;
+}
+
+.image {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+.image img {
+  background: rgb(241, 241, 241);
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
+}
+
+#about_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  margin-top: 20px;
+  margin-right: 33%;
+}
+
+#about_sec {
+
+  gap: 60px;
+}
+
+
+/* hostel rules */
+
+.col-md-9 ol li {
+  margin-top: 6px;
+  text-align: justify;
+}
+
+/* hostel fees */
+
+.container-fee {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  border: 2px solid rgb(135, 135, 139);
+  padding-bottom: 20px;
+  padding-left: 10px;
   padding-right: 10px;
+  border-radius: 10px;
+  background-color: #c2e8ef;
+  margin-top: 8px;
 }
 
-.center {
-  justify-self: right;
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
 }
 
-.topnav a .placement {
+.info {
+  margin-left: 40px;
+  color: #053c64;
+}
+
+.info h3 a {
+  padding-left: 80px;
   text-decoration: none;
 }
+
+.info p {
+
+  text-align: center;
+}
+
+/* event and news */
+
+.carousel-eve {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  height: 550px;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: 15%;
+
+}
+
+.carousel-eve::-webkit-scrollbar {
+  display: block;
+}
+
+.carousel-item-eve {
+  flex: 0 0 auto;
+  width: 350px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  border-bottom: 4px solid orange;
+
+
+
+}
+
+.carousel-img-eve {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.carousel-content-eve {
+  text-align: center;
+  margin-top: 20px;
+  color: orange;
+}
+
+.carousel-content-eve p {
+  color: #005BC2;
+  margin-top: 30px;
+}
+
+.carousel-button-eve {
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 35%;
+  margin-top: 35px;
+
+}
+
+
+.carousel-fic .carousel-img-fic {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-left: 30.3%;
+  box-shadow: 0 8px 20px -4px #abbcc9;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  gap: 20px;
+}
+
+
+.carousel-fic {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  height: 550px;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 50px;
+  margin-right: 80%;
+
+}
+
+.carousel-fic::-webkit-scrollbar {
+  display: block;
+}
+
+.carousel-item-fic {
+  flex: 0 0 auto;
+  width: 350px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+  height: 400px;
+  width: 352px;
+  margin-top: 80px;
+  background: #fff;
+  box-shadow: 0 8px 30px -7px aliceblue;
+
+
+
+}
+
+.carousel-content-fic h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 20px;
+
+  span {
+    font-size: 18px;
+    color: #666666;
+  }
+}
+
+.carousel-content-fic .card-text {
+  margin-left: 15px;
+  text-align: justify;
+}
+
+/*  */
+
+
 
 .card-mem {
   display: flex;
@@ -1103,6 +1141,7 @@ td {
   width: 500px;
   border: 1px solid black;
   margin: 30px auto;
+
 }
 
 .col-9 {
@@ -1112,6 +1151,8 @@ td {
 .left-side {
   flex-basis: 50%;
   background-color: lightgray;
+
+
 }
 
 .right-side {
@@ -1119,6 +1160,8 @@ td {
   background-color: white;
   padding: 20px;
 }
+
+
 
 .col-mem-1 {
   justify-content: space-between;
@@ -1136,6 +1179,9 @@ td {
   height: 380px;
   width: 500px;
   border: 1px solid black;
+
+
+
 }
 
 .right-head {
@@ -1149,11 +1195,14 @@ td {
   height: 380px;
   width: 500px;
   border: 1px solid black;
+
+
 }
 
 .col-8 {
   margin-top: 20px;
   text-decoration: none;
+
 }
 
 .col-list {
@@ -1161,12 +1210,13 @@ td {
   width: 50%;
   text-align: justify;
 
-  /* dhasarathan check it  */
   li {
     margin-bottom: 10px;
     list-style-type: square;
     font-weight: bold;
+
   }
+
 }
 
 .col-8 h2 {
@@ -1174,6 +1224,7 @@ td {
   margin: 0 30% 20px 0;
   color: #005BC2;
 }
+
 
 #col-off h4 {
   font-weight: bolder;

@@ -7,7 +7,7 @@
 <div class="container text-center">
     <div class="row align-items-start">
 
-        <div class="col-3">
+        <div id = "civil_about" class="col-3">
             <div class="civil-sec">
                 <h4 class="hostel-head">Faculty & Staffs</h4>
                 <ul class="cse_nav">

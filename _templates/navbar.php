@@ -57,7 +57,7 @@
         <div class="col-md-8">
             <img src="images/college_logo.svg" alt="college logo" class="college-img-banner">
         </div>
-        <div class="col-md-4">
+        <div id = "image_banner" class="col-md-4">
             <img src="images/independence.svg" alt="75th Independence day logo" class="college-img-banner">
         </div>
     </div>

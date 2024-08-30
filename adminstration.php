@@ -35,7 +35,7 @@ if(isset($_GET['role'])){
             </div>
             <div class="col-6 design-vc-image">
                 <img src="./images/<?php echo $admin_image?>" alt="vice-chancellor image" class="rounded mx-auto d-block">
-                <div class="vc-content">
+                <div id = "vc-content" class="vc-content">
                     <h2><?php echo $admin_name?></h2>
                     <b><?php echo $admin_role?> <br> <?php echo $college_name?></b><br>
                     <a href="<?php echo $profile ?>" target="_blank">View Profile</a>
